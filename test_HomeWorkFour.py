@@ -17,8 +17,8 @@ class TestHomeWorkFour(unittest.TestCase):
 
     def test_Name(self):
         self.assertEqual(HomeWorkFour.fullname('Phillip', 'Renaud'), 'Phillip Renaud')
-        self.assertEqual(HomeWorkFour.fullname('Santa', 'Claus'), 'Santa Claus')
-        self.assertEqual(HomeWorkFour.fullname('Bella', 'Delphine'), 'Bella Delphine')
+        self.assertEqual(HomeWorkFour.fullname('Santa', 4), 0)
+        self.assertEqual(HomeWorkFour.fullname(1, 2), 0)
 
 if __name__ == '__main__':
     unittest.main()

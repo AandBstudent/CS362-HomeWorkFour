@@ -10,5 +10,7 @@ def average(list):
     else: return 0
 
 def fullname(x,y):
-    z = x + " " + y
-    return z
+    if(isinstance(x,str) and isinstance(y,str)):
+        z = x + " " + y
+        return z
+    else: return 0
